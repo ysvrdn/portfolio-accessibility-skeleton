@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Your Name | Software Developer Portfolio</title>
+    <meta name="description" content="Personal portfolio of Your Name, showcasing projects in Android development, open-source contributions, and computer science coursework.">
+    <meta name="author" content="Your Name">
+    
+    <!-- Minimal styles for structural clarity -->
+    <style>
+        body { font-family: system-ui, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 1rem; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; }
+        .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: white; padding: 8px; z-index: 100; }
+        .skip-link:focus { top: 0; }
+    </style>
+</head>
+<body>
+
+    <!-- Accessibility feature: Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>Computer Science Student & Developer</p>
+        
+        <!-- aria-label distinguishes this navigation from others on the page -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>I am a developer focused on building efficient, user-centric applications and exploring open-source technologies.</p>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Selected Projects</h2>
+            <article>
+                <h3>Multi-Platform Management App</h3>
+                <p>An application integrating cloud sheets and mobile interfaces for streamlined record keeping.</p>
+                <!-- Descriptive link text for screen readers (avoid "click here") -->
+                <a href="#" aria-label="Read more about the Multi-Platform Management App">Read Case Study</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Your Name Portfolio</title>
+    <meta name="description" content="Get in touch with Your Name for collaborations, projects, or inquiries.">
+    <style>
+        body { font-family: system-ui, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 1rem; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; }
+        .form-group { margin-bottom: 1rem; }
+        label { display: block; font-weight: bold; margin-bottom: 0.5rem; }
+        input, textarea { width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+        /* Focus states are critical for keyboard navigation */
+        input:focus, textarea:focus, button:focus { outline: 2px solid #005fcc; outline-offset: 2px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Contact Me</h2>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section aria-labelledby="contact-heading">
+            <h1 id="contact-heading">Let's Connect</h1>
+            
+            <!-- The form is fully tab-navigable by default due to standard HTML inputs -->
+            <form action="/submit-endpoint" method="POST" novalidate>
+                
+                <div class="form-group">
+                    <!-- The 'for' attribute strictly ties the label to the input's 'id' -->
+                    <label for="name">Full Name (Required)</label>
+                    <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address (Required)</label>
+                    <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message (Required)</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name</p>
+    </footer>
+
+</body>
+</html>
+
+
