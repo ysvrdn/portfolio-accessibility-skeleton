@@ -49,7 +49,24 @@
                 <a href="#" aria-label="Read more about the Multi-Platform Management App">Read Case Study</a>
             </article>
         </section>
+        <section id="todo-app" aria-labelledby="todo-heading">
+            <h2 id="todo-heading">Task Manager</h2>
+    
+            <div class="todo-input-group">
+                <input type="text" id="todo-input" placeholder="What needs to be done?" aria-label="New task input">
+                <button id="add-btn">Add Task</button>
+            </div>
+
+            <div class="todo-filters" id="filters">
+                <button data-filter="all" class="active" aria-pressed="true">All</button>
+                <button data-filter="active" aria-pressed="false">Active</button>
+                <button data-filter="completed" aria-pressed="false">Completed</button>
+            </div>
+
+            <ul id="todo-list" aria-live="polite"></ul>
+        </section>
     </main>
+    <script src="todo.js"></script>
 
     <footer>
         <p>&copy; 2026 ysvrdn. All rights reserved.</p>
