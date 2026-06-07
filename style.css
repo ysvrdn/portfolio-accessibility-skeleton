@@ -303,3 +303,214 @@ footer {
     padding: 0.25rem 0.5rem;
     cursor: pointer;
 }
+/* ==========================================================================
+   Weather App Styles
+   ========================================================================== */
+#weather-app {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--surface-color);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.weather-input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.weather-input-group input {
+    flex-grow: 1;
+}
+
+#weather-display {
+    background: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.weather-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+.weather-metrics {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.metric {
+    background: var(--surface-color);
+    padding: 1rem;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 100px;
+    border: 1px solid var(--border-color);
+}
+
+.metric strong {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.weather-error {
+    color: #ef4444;
+    font-weight: 600;
+}
+/* ==========================================================================
+   E-Commerce Capstone Styles
+   ========================================================================== */
+#ecommerce-app {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ecommerce-container {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ecommerce-nav {
+    display: flex;
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ecommerce-nav button {
+    flex: 1;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.ecommerce-nav button:hover {
+    background: var(--surface-color);
+}
+
+.ecommerce-nav button.active {
+    border-bottom-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+#ecommerce-view {
+    padding: 2rem;
+    min-height: 400px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    background: white; /* API images usually have white backgrounds */
+    border-radius: 4px;
+}
+
+.product-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-info h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-info .price {
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.add-to-cart-btn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.add-to-cart-btn:hover {
+    background: var(--accent-hover);
+}
+
+/* Cart Styles */
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.remove-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-total {
+    margin-top: 2rem;
+    text-align: right;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--border-color);
+}

@@ -10,10 +10,9 @@
     <meta name="author" content="Your Name">
     
     <!-- Minimal styles for structural clarity -->
-    <style>
+
 
       <link rel="stylesheet" href="style.css">
-    </style>
 </head>
 <body>
 
@@ -48,6 +47,27 @@
                 <!-- Descriptive link text for screen readers (avoid "click here") -->
                 <a href="#" aria-label="Read more about the Multi-Platform Management App">Read Case Study</a>
             </article>
+            <article>
+                <h3>Weather Dashboard (Async APIs)</h3>
+                <p>A real-time Weather Dashboard built by fetching and processing JSON data from a public REST API using asynchronous JavaScript.</p>
+                <ul>
+                    <li><strong>Tech:</strong> Fetch API, Async/Await, JSON Parsing</li>
+                    <li><strong>Features:</strong> Real-time metrics, robust error handling, city-name search.</li>
+                </ul>
+                <a href="#weather-app" aria-label="Jump to the Weather Dashboard demo">View Demo</a>
+            </article>
+        </section>
+        <section id="weather-app" aria-labelledby="weather-heading">
+            <h2 id="weather-heading">Weather Dashboard Demo</h2>
+    
+            <div class="weather-input-group">
+                <input type="text" id="city-input" placeholder="Enter a city name (e.g., London)" aria-label="City search input">
+                <button id="search-btn">Search Weather</button>
+            </div>
+
+            <div id="weather-display" aria-live="polite">
+                <p>Search for a city to see live weather metrics.</p>
+            </div>
         </section>
         <section id="todo-app" aria-labelledby="todo-heading">
             <h2 id="todo-heading">Task Manager</h2>
@@ -65,8 +85,27 @@
 
             <ul id="todo-list" aria-live="polite"></ul>
         </section>
+        <section id="ecommerce-app" aria-labelledby="ecommerce-heading">
+            <h2 id="ecommerce-heading">E-Commerce Capstone (SPA Architecture)</h2>
+            <p style="margin-bottom: 1.5rem;">A modular frontend fetching live product data, featuring client-side routing and state management.</p>
+            
+            <div class="ecommerce-container">
+                <nav class="ecommerce-nav" aria-label="E-commerce navigation">
+                    <button id="route-catalog" class="active" aria-pressed="true">Product Catalog</button>
+                    <button id="route-cart" aria-pressed="false">Shopping Cart (<span id="cart-count">0</span>)</button>
+                </nav>
+
+                <div id="ecommerce-view" aria-live="polite">
+                    <p>Loading application...</p>
+                </div>
+            </div>
+        </section>
+
+      
     </main>
     <script src="todo.js"></script>
+    <script src="weather.js"></script>
+    <script src="ecommerce.js"></script>
 
     <footer>
         <p>&copy; 2026 ysvrdn. All rights reserved.</p>
